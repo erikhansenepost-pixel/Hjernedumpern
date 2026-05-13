@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>__LABEL__</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd "__INSTALL_DIR__" &amp;&amp; "__PYTHON__" pipeline.py</string>
+    </array>
+    <key>WatchPaths</key>
+    <array>
+        <string>__WATCH_PATH__</string>
+    </array>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>KeepAlive</key>
+    <false/>
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+    <key>StandardOutPath</key>
+    <string>/tmp/hjernedumpern.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/hjernedumpern.err</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>__USER_LOCAL_BIN__:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>__USER_HOME__</string>
+        <key>HJERNEDUMPERN_ICLOUD_DIR</key>
+        <string>__ICLOUD_DIR__</string>
+    </dict>
+</dict>
+</plist>

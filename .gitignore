@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Pipeline state og lokal drift
+voice-pipeline/state.sqlite
+voice-pipeline/state.sqlite-journal
+voice-pipeline/state.sqlite-wal
+voice-pipeline/state.sqlite-shm
+voice-pipeline/logs/
+voice-pipeline/.pipeline.lock
+
+# Lydfiler — beholdes lokalt, ikke i repo
+*.m4a
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.webm
+*.mp4
+*.aac
+*.aiff
+
+# Output-tekst fra ad-hoc transkribering
+transkribering/*.txt
+!transkribering/README.md
+
+# OS-skrap
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~

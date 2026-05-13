@@ -1,0 +1,9 @@
+[project]
+name = "voice-pipeline"
+version = "0.1.0"
+description = "iPhone → iCloud → lokal transkribering + valgfri LLM-analyse av norske lydopptak."
+requires-python = ">=3.11"
+dependencies = []  # Kun stdlib + transkribering-venv + claude CLI — ingen nye pakker
+
+[project.scripts]
+voice-pipeline = "pipeline:main"

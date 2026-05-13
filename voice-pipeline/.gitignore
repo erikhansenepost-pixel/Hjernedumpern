@@ -1,0 +1,8 @@
+state.sqlite
+state.sqlite-journal
+state.sqlite-wal
+state.sqlite-shm
+logs/
+__pycache__/
+*.pyc
+.pipeline.lock
